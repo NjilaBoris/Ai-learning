@@ -113,7 +113,7 @@ body {
 }
 
 @utility companions-grid {
-  @apply flex flex-wrap gap-4 w-full max-md:justify-center justify-between;
+  @apply flex flex-wrap gap-4 w-full max-md:justify-center justify-between lg:grid lg:grid-cols-3;
 }
 
 @utility companion-card {
