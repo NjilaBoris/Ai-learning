@@ -6,7 +6,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between mx-auto w-full px-14 py-4 bg-white max-sm:px-4">
+    <nav className="flex max-sm:pr-1 items-center justify-between mx-auto w-full px-14 py-4 bg-white max-sm:px-4">
       <Link href="/">
         <div className="flex items-center gap-2.5 cursor-pointer">
           <Image src="/images/logo.svg" alt="logo" width={46} height={44} />
@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavItems />
         <SignedOut>
           <SignInButton>
-            <button className="btn-signin">Sign In</button>
+            <button className="btn-signin max-sm:shrink-0">Sign In</button>
           </SignInButton>
         </SignedOut>
         <SignedIn>
